@@ -1,0 +1,20 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "env": {
+        "browser": true,
+        "jest": true
+    },
+    "rules": {
+        "react/jsx-filename-extension": false,
+        "max-len": [2, 120, 2],
+        "react/forbid-prop-types": false,
+        "import/prefer-default-export": "warn",
+        "no-underscore-dangle": "off",
+        "no-confusing-arrow": "off"
+    }
+}

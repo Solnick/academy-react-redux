@@ -1,0 +1,22 @@
+@import '../../style/variables';
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $footer-color;
+  width: 100%;
+  height: $footer-height;
+  margin-top: auto;
+  color: lighten($font-color, 30);
+  hr {
+    $hr-color: darken($font-color, 8);
+    min-width: 400px;
+    background-color: $hr-color;
+    border:1px solid $hr-color;
+  }
+  span {
+    margin-bottom: 10px;
+  }
+}
