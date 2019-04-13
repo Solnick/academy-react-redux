@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { withRouter } from 'react-router-dom';
 import styles from './header.module.scss';
 import Tab from './Tab/Tab';
 import pgsLogo from '../../assets/images/pgs-logo.svg';
@@ -34,4 +34,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default withRouter(Header);

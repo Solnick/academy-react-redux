@@ -1,4 +1,10 @@
 $primary-color: #ff7626;
 $font-color: #545454;
+$light-gray: #fbfbfb;
 $footer-color: #282828;
-$footer-height: 120px;
+$view-background-color: #f8f8f8;
+$footer-height: 13vh;
+$header-height: 20vh;
+$view-height: 100vh - $header-height - $footer-height;
+$view-width: 1000px;
+$view-standard-margin-top: 30px;

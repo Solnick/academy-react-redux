@@ -1,0 +1,11 @@
+@import '../../style/variables';
+
+.aboutUsWrapper {
+  width: 100%;
+  max-width: $view-width;
+  margin-top: $view-standard-margin-top;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

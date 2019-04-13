@@ -1,0 +1,17 @@
+.infoBoxWrapper {
+  width: 290px;
+  img {
+    width: inherit;
+  }
+  .textWrapper {
+    line-height: 20px;
+    margin: 20px;
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 400;
+    }
+    p {
+      margin-top: 15px
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../style/variables';
+
+.view {
+  height: $view-height;
+  background-color: $view-background-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
