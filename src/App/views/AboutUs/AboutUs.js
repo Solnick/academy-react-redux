@@ -22,7 +22,6 @@ const aboutUsInfo = [
     text: 'Etiam ullamcorper. Suspendisse a pellentesque dui, non felis maecenas.',
     img: infoBoxImg3,
   },
-
 ];
 
 const AboutUs = () => (

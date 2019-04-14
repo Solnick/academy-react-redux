@@ -99,4 +99,9 @@ describe('parseSkiCamsData()', () => {
   it('should return 2 objects with resorts details', () => {
     expect(parseSkiCamsData(input, searchFor)).toEqual(output);
   });
+  it('should return 2 objects with searched name', () => {
+    const parsedData = parseSkiCamsData(input, searchFor);
+    expect(parsedData.some(skiResortData => skiResortData.name === searchFor[0])).toBe(true);
+    expect(parsedData.some(skiResortData => skiResortData.name === searchFor[1])).toBe(true);
+  });
 });

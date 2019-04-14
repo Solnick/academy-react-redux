@@ -10,10 +10,11 @@ const Tile = ({ children, center }) => (
 
 Tile.defaultProps = {
   center: false,
+  children: null,
 };
 
 Tile.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   center: PropTypes.bool,
 };
 

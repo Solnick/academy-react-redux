@@ -1,0 +1,753 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact component should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Contact />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <Tile
+        center={true}
+      >
+        <ValidatorForm
+          debounceTime={0}
+          onError={[Function]}
+          onSubmit={[Function]}
+        >
+          <div
+            className="contactFormWrapper"
+          >
+            <TextValidator
+              errorMessages="error"
+              label="Name"
+              name="name"
+              onChange={[Function]}
+              required={true}
+              validatorListener={[Function]}
+              validators={Array []}
+              value=""
+              variant="standard"
+            />
+            <TextValidator
+              errorMessages={
+                Array [
+                  "Email is not valid",
+                ]
+              }
+              label="Email"
+              name="email"
+              onChange={[Function]}
+              required={true}
+              validatorListener={[Function]}
+              validators={
+                Array [
+                  "isEmail",
+                ]
+              }
+              value=""
+              variant="standard"
+            />
+            <TextValidator
+              className="textArea"
+              errorMessages="error"
+              label="Message"
+              multiline={true}
+              name="message"
+              onChange={[Function]}
+              rows={6}
+              validatorListener={[Function]}
+              validators={Array []}
+              value=""
+              variant="standard"
+            />
+            <WithStyles(Button)
+              className="sendButton"
+              color="primary"
+              type="submit"
+              variant="contained"
+            >
+              Send
+            </WithStyles(Button)>
+          </div>
+        </ValidatorForm>
+      </Tile>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "center": true,
+        "children": <ValidatorForm
+          debounceTime={0}
+          onError={[Function]}
+          onSubmit={[Function]}
+        >
+          <div
+            className="contactFormWrapper"
+          >
+            <TextValidator
+              errorMessages="error"
+              label="Name"
+              name="name"
+              onChange={[Function]}
+              required={true}
+              validatorListener={[Function]}
+              validators={Array []}
+              value=""
+              variant="standard"
+            />
+            <TextValidator
+              errorMessages={
+                Array [
+                  "Email is not valid",
+                ]
+              }
+              label="Email"
+              name="email"
+              onChange={[Function]}
+              required={true}
+              validatorListener={[Function]}
+              validators={
+                Array [
+                  "isEmail",
+                ]
+              }
+              value=""
+              variant="standard"
+            />
+            <TextValidator
+              className="textArea"
+              errorMessages="error"
+              label="Message"
+              multiline={true}
+              name="message"
+              onChange={[Function]}
+              rows={6}
+              validatorListener={[Function]}
+              validators={Array []}
+              value=""
+              variant="standard"
+            />
+            <WithStyles(Button)
+              className="sendButton"
+              color="primary"
+              type="submit"
+              variant="contained"
+            >
+              Send
+            </WithStyles(Button)>
+          </div>
+        </ValidatorForm>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div
+            className="contactFormWrapper"
+          >
+            <TextValidator
+              errorMessages="error"
+              label="Name"
+              name="name"
+              onChange={[Function]}
+              required={true}
+              validatorListener={[Function]}
+              validators={Array []}
+              value=""
+              variant="standard"
+            />
+            <TextValidator
+              errorMessages={
+                Array [
+                  "Email is not valid",
+                ]
+              }
+              label="Email"
+              name="email"
+              onChange={[Function]}
+              required={true}
+              validatorListener={[Function]}
+              validators={
+                Array [
+                  "isEmail",
+                ]
+              }
+              value=""
+              variant="standard"
+            />
+            <TextValidator
+              className="textArea"
+              errorMessages="error"
+              label="Message"
+              multiline={true}
+              name="message"
+              onChange={[Function]}
+              rows={6}
+              validatorListener={[Function]}
+              validators={Array []}
+              value=""
+              variant="standard"
+            />
+            <WithStyles(Button)
+              className="sendButton"
+              color="primary"
+              type="submit"
+              variant="contained"
+            >
+              Send
+            </WithStyles(Button)>
+          </div>,
+          "debounceTime": 0,
+          "onError": [Function],
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <TextValidator
+                errorMessages="error"
+                label="Name"
+                name="name"
+                onChange={[Function]}
+                required={true}
+                validatorListener={[Function]}
+                validators={Array []}
+                value=""
+                variant="standard"
+              />,
+              <TextValidator
+                errorMessages={
+                  Array [
+                    "Email is not valid",
+                  ]
+                }
+                label="Email"
+                name="email"
+                onChange={[Function]}
+                required={true}
+                validatorListener={[Function]}
+                validators={
+                  Array [
+                    "isEmail",
+                  ]
+                }
+                value=""
+                variant="standard"
+              />,
+              <TextValidator
+                className="textArea"
+                errorMessages="error"
+                label="Message"
+                multiline={true}
+                name="message"
+                onChange={[Function]}
+                rows={6}
+                validatorListener={[Function]}
+                validators={Array []}
+                value=""
+                variant="standard"
+              />,
+              <WithStyles(Button)
+                className="sendButton"
+                color="primary"
+                type="submit"
+                variant="contained"
+              >
+                Send
+              </WithStyles(Button)>,
+            ],
+            "className": "contactFormWrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "errorMessages": "error",
+                "label": "Name",
+                "name": "name",
+                "onChange": [Function],
+                "required": true,
+                "validatorListener": [Function],
+                "validators": Array [],
+                "value": "",
+                "variant": "standard",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "errorMessages": Array [
+                  "Email is not valid",
+                ],
+                "label": "Email",
+                "name": "email",
+                "onChange": [Function],
+                "required": true,
+                "validatorListener": [Function],
+                "validators": Array [
+                  "isEmail",
+                ],
+                "value": "",
+                "variant": "standard",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "textArea",
+                "errorMessages": "error",
+                "label": "Message",
+                "multiline": true,
+                "name": "message",
+                "onChange": [Function],
+                "rows": 6,
+                "validatorListener": [Function],
+                "validators": Array [],
+                "value": "",
+                "variant": "standard",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Send",
+                "className": "sendButton",
+                "color": "primary",
+                "type": "submit",
+                "variant": "contained",
+              },
+              "ref": null,
+              "rendered": "Send",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <Tile
+          center={true}
+        >
+          <ValidatorForm
+            debounceTime={0}
+            onError={[Function]}
+            onSubmit={[Function]}
+          >
+            <div
+              className="contactFormWrapper"
+            >
+              <TextValidator
+                errorMessages="error"
+                label="Name"
+                name="name"
+                onChange={[Function]}
+                required={true}
+                validatorListener={[Function]}
+                validators={Array []}
+                value=""
+                variant="standard"
+              />
+              <TextValidator
+                errorMessages={
+                  Array [
+                    "Email is not valid",
+                  ]
+                }
+                label="Email"
+                name="email"
+                onChange={[Function]}
+                required={true}
+                validatorListener={[Function]}
+                validators={
+                  Array [
+                    "isEmail",
+                  ]
+                }
+                value=""
+                variant="standard"
+              />
+              <TextValidator
+                className="textArea"
+                errorMessages="error"
+                label="Message"
+                multiline={true}
+                name="message"
+                onChange={[Function]}
+                rows={6}
+                validatorListener={[Function]}
+                validators={Array []}
+                value=""
+                variant="standard"
+              />
+              <WithStyles(Button)
+                className="sendButton"
+                color="primary"
+                type="submit"
+                variant="contained"
+              >
+                Send
+              </WithStyles(Button)>
+            </div>
+          </ValidatorForm>
+        </Tile>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "center": true,
+          "children": <ValidatorForm
+            debounceTime={0}
+            onError={[Function]}
+            onSubmit={[Function]}
+          >
+            <div
+              className="contactFormWrapper"
+            >
+              <TextValidator
+                errorMessages="error"
+                label="Name"
+                name="name"
+                onChange={[Function]}
+                required={true}
+                validatorListener={[Function]}
+                validators={Array []}
+                value=""
+                variant="standard"
+              />
+              <TextValidator
+                errorMessages={
+                  Array [
+                    "Email is not valid",
+                  ]
+                }
+                label="Email"
+                name="email"
+                onChange={[Function]}
+                required={true}
+                validatorListener={[Function]}
+                validators={
+                  Array [
+                    "isEmail",
+                  ]
+                }
+                value=""
+                variant="standard"
+              />
+              <TextValidator
+                className="textArea"
+                errorMessages="error"
+                label="Message"
+                multiline={true}
+                name="message"
+                onChange={[Function]}
+                rows={6}
+                validatorListener={[Function]}
+                validators={Array []}
+                value=""
+                variant="standard"
+              />
+              <WithStyles(Button)
+                className="sendButton"
+                color="primary"
+                type="submit"
+                variant="contained"
+              >
+                Send
+              </WithStyles(Button)>
+            </div>
+          </ValidatorForm>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <div
+              className="contactFormWrapper"
+            >
+              <TextValidator
+                errorMessages="error"
+                label="Name"
+                name="name"
+                onChange={[Function]}
+                required={true}
+                validatorListener={[Function]}
+                validators={Array []}
+                value=""
+                variant="standard"
+              />
+              <TextValidator
+                errorMessages={
+                  Array [
+                    "Email is not valid",
+                  ]
+                }
+                label="Email"
+                name="email"
+                onChange={[Function]}
+                required={true}
+                validatorListener={[Function]}
+                validators={
+                  Array [
+                    "isEmail",
+                  ]
+                }
+                value=""
+                variant="standard"
+              />
+              <TextValidator
+                className="textArea"
+                errorMessages="error"
+                label="Message"
+                multiline={true}
+                name="message"
+                onChange={[Function]}
+                rows={6}
+                validatorListener={[Function]}
+                validators={Array []}
+                value=""
+                variant="standard"
+              />
+              <WithStyles(Button)
+                className="sendButton"
+                color="primary"
+                type="submit"
+                variant="contained"
+              >
+                Send
+              </WithStyles(Button)>
+            </div>,
+            "debounceTime": 0,
+            "onError": [Function],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <TextValidator
+                  errorMessages="error"
+                  label="Name"
+                  name="name"
+                  onChange={[Function]}
+                  required={true}
+                  validatorListener={[Function]}
+                  validators={Array []}
+                  value=""
+                  variant="standard"
+                />,
+                <TextValidator
+                  errorMessages={
+                    Array [
+                      "Email is not valid",
+                    ]
+                  }
+                  label="Email"
+                  name="email"
+                  onChange={[Function]}
+                  required={true}
+                  validatorListener={[Function]}
+                  validators={
+                    Array [
+                      "isEmail",
+                    ]
+                  }
+                  value=""
+                  variant="standard"
+                />,
+                <TextValidator
+                  className="textArea"
+                  errorMessages="error"
+                  label="Message"
+                  multiline={true}
+                  name="message"
+                  onChange={[Function]}
+                  rows={6}
+                  validatorListener={[Function]}
+                  validators={Array []}
+                  value=""
+                  variant="standard"
+                />,
+                <WithStyles(Button)
+                  className="sendButton"
+                  color="primary"
+                  type="submit"
+                  variant="contained"
+                >
+                  Send
+                </WithStyles(Button)>,
+              ],
+              "className": "contactFormWrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "errorMessages": "error",
+                  "label": "Name",
+                  "name": "name",
+                  "onChange": [Function],
+                  "required": true,
+                  "validatorListener": [Function],
+                  "validators": Array [],
+                  "value": "",
+                  "variant": "standard",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "errorMessages": Array [
+                    "Email is not valid",
+                  ],
+                  "label": "Email",
+                  "name": "email",
+                  "onChange": [Function],
+                  "required": true,
+                  "validatorListener": [Function],
+                  "validators": Array [
+                    "isEmail",
+                  ],
+                  "value": "",
+                  "variant": "standard",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "textArea",
+                  "errorMessages": "error",
+                  "label": "Message",
+                  "multiline": true,
+                  "name": "message",
+                  "onChange": [Function],
+                  "rows": 6,
+                  "validatorListener": [Function],
+                  "validators": Array [],
+                  "value": "",
+                  "variant": "standard",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Send",
+                  "className": "sendButton",
+                  "color": "primary",
+                  "type": "submit",
+                  "variant": "contained",
+                },
+                "ref": null,
+                "rendered": "Send",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
