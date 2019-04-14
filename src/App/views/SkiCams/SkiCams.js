@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styles from './skiCams.module.scss';
 import getSkiCamsData from '../../api/getSkiCamsData';
-import parseSkiCamsData from '../../utils/parseSkiCamsData';
+import parseSkiCamsData from '../../utils/parseSkiCamsdata/parseSkiCamsData';
 import SkiResortDetails from './SkiResortDetails/SkiResortDetails';
 import View from '../../components/View/View';
-
 
 const SkiCams = () => {
   const [skiCamsData, setSkiCamsData] = useState(null);
@@ -24,7 +23,13 @@ const SkiCams = () => {
   return (
     <View>
       <div className={styles.skiCams}>
-        {skiCamsData && skiCamsData.map(skiCamData => <SkiResortDetails key={skiCamData.name} {...skiCamData} />)}
+        {skiCamsData && skiCamsData.map(({ name, cams }) => (
+          <SkiResortDetails
+            key={name}
+            name={name}
+            cams={cams}
+          />
+        ))}
       </div>
     </View>
   );

@@ -10,14 +10,29 @@ describe('InfoBox component', () => {
       text: 'text',
       title: 'title',
     };
-    const infoBoxInstance = shallow(<InfoBox
-      {...props}
-    />);
     it('contains h2 element with title', () => {
+      const infoBoxInstance = shallow(<InfoBox
+        {...props}
+      />);
       expect(infoBoxInstance.containsMatchingElement(<h2>{props.title}</h2>));
     });
     it('contains paragraph element with title', () => {
+      const infoBoxInstance = shallow(<InfoBox
+        {...props}
+      />);
       expect(infoBoxInstance.containsMatchingElement(<p>{props.text}</p>));
+    });
+    it('contains paragraph element with title', () => {
+      const infoBoxInstance = shallow(<InfoBox
+        {...props}
+      />);
+      expect(infoBoxInstance.containsMatchingElement(<img src={props.img} alt={props.img} />));
+    });
+    it('should render correctly', () => {
+      const infoBoxInstance = shallow(<InfoBox
+        {...props}
+      />);
+      expect(infoBoxInstance).toMatchSnapshot();
     });
   });
 });

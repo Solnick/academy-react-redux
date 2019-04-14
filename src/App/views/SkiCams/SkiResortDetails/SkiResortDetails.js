@@ -5,7 +5,7 @@ import Tile from '../../../components/Tile/Tile';
 import styles from './skiResortDetails.module.scss';
 
 const SkiResortDetails = (props) => {
-  const { name, cams } = props;
+  const { name: skiResortName, cams } = props;
   const camsArray = Object.values(cams).slice(0, 2);
 
   return (
@@ -13,10 +13,16 @@ const SkiResortDetails = (props) => {
       <div className={styles.container}>
         <span className={styles.titleContainer}>
           <span>{getCurrentFormattedDate()}</span>
-          <h2>{name}</h2>
+          <h2>{skiResortName}</h2>
         </span>
         {
-          camsArray.map(cam => <img src={cam.url} key={cam.name} alt={cam.name} />)
+          camsArray.map(({ url, name }) => (
+            <img
+              src={url}
+              key={name}
+              alt={name}
+            />
+          ))
         }
       </div>
     </Tile>
