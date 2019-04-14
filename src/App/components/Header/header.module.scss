@@ -14,7 +14,7 @@
       @include on('medium') {
         margin-left: 15%;
       }
-      margin-left: 15%;
+      margin-left: 5%;
       margin-top: 50px;
       width: 140px;
     }
@@ -22,6 +22,7 @@
       @include on('medium') {
         margin-left: 15%;
         max-width: 400px;
+        padding: 25px 0 0 0;
       }
       padding: 25px 5% 0 5%;
       width: 100%;

@@ -6,6 +6,7 @@
   flex-direction: column;
   max-width: 1000px;
   align-items: center;
+  width: 100%;
   @include on('medium') {
     justify-content: space-evenly;
     flex-direction: row;
