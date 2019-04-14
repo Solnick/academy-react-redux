@@ -1,0 +1,34 @@
+@import '../../../style/variables';
+@import '../../../style/breakpoints';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    span {
+      display: flex;
+      align-self: baseline;
+      justify-content: flex-end;
+      width: 100%;
+      padding: 8px;
+      color: lighten($font-color, 30);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+  }
+  img {
+    max-height: 290px;
+    height: auto;
+    object-fit: scale-down;
+    background-color: black;
+  }
+}

@@ -3,6 +3,7 @@
 .headerWrapper {
   width: 100%;
   border-bottom: 1px solid lighten($font-color, 50);
+  background-color: white;
   .header {
     margin-left: 15%;
     display: flex;
@@ -15,7 +16,8 @@
     }
     .navigation {
       margin-top: 25px;
-      width: 400px;
+      max-width: 400px;
+      width: -webkit-fill-available;
       justify-content: space-between;
       flex-direction: row;
       display: flex;

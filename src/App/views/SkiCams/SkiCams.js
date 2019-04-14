@@ -11,7 +11,7 @@ const SkiCams = () => {
     getSkiCamsData()
       .then((resortsData) => {
         const searchFor = [
-          'Alta Lessinia',
+          'Castelluccio di Norcia',
           'Piani di Bobbio',
         ];
         const filteredSkiResorts = Object.values(resortsData)

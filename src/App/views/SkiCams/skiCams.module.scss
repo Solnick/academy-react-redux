@@ -1,3 +1,14 @@
-.skiCams {
+@import '../../style/variables';
+@import '../../style/breakpoints';
 
+.skiCams {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  align-items: center;
+  width: -webkit-fill-available;
+  @include on('medium') {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 }

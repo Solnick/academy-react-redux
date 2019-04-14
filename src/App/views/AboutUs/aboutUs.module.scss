@@ -1,11 +1,15 @@
 @import '../../style/variables';
+@import '../../style/breakpoints';
 
 .aboutUsWrapper {
   width: 100%;
   max-width: $view-width;
-  margin-top: $view-standard-margin-top;
   background-color: #f8f8f8;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  @media(min-width: 905px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
