@@ -29,7 +29,7 @@ const AboutUs = () => (
   <View>
     <div className={styles.aboutUsWrapper}>
       {
-        aboutUsInfo.map(details => <InfoBox key={details.img} {...details} />)
+        aboutUsInfo.map(({ text, title, img }) => <InfoBox key={img} text={text} title={title} img={img} />)
       }
     </div>
   </View>

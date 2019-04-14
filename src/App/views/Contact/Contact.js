@@ -48,6 +48,7 @@ const Contact = () => {
               label="Message"
               value={message}
               onChange={event => setMessage(event.target.value)}
+              className={styles.textArea}
             />
             <Button
               variant="contained"

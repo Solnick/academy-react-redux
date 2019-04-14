@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from './skiCams.module.scss';
 import getSkiCamsData from '../../api/getSkiCamsData';
+import parseSkiCamsData from '../../utils/parseSkiCamsData';
 import SkiResortDetails from './SkiResortDetails/SkiResortDetails';
 import View from '../../components/View/View';
+
 
 const SkiCams = () => {
   const [skiCamsData, setSkiCamsData] = useState(null);
@@ -14,10 +16,7 @@ const SkiCams = () => {
           'Castelluccio di Norcia',
           'Piani di Bobbio',
         ];
-        const filteredSkiResorts = Object.values(resortsData)
-          .filter(
-            skiResort => searchFor.includes(skiResort.name),
-          );
+        const filteredSkiResorts = parseSkiCamsData(resortsData, searchFor);
         setSkiCamsData(filteredSkiResorts);
       });
   },

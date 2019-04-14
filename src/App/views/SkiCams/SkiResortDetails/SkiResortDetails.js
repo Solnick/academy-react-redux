@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import moment from 'moment';
+import getCurrentFormattedDate from '../../../utils/getCurrentFormattedDate';
 import Tile from '../../../components/Tile/Tile';
 import styles from './skiResortDetails.module.scss';
 
@@ -12,7 +12,7 @@ const SkiResortDetails = (props) => {
     <Tile>
       <div className={styles.container}>
         <span className={styles.titleContainer}>
-          <span>{moment().format('DD-MM-YYYY')}</span>
+          <span>{getCurrentFormattedDate()}</span>
           <h2>{name}</h2>
         </span>
         {

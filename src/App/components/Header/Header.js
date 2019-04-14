@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import styles from './header.module.scss';
 import Tab from './Tab/Tab';
@@ -19,23 +20,31 @@ const tabs = [
   },
 ];
 
-const Header = () => (
-  <div className={styles.headerWrapper}>
-    <div className={styles.header}>
-      <img src={pgsLogo} alt="PGS software logo" />
-      <div className={styles.navigation}>
-        {
-          tabs.map(({ to, text }) => (
-            <Tab
-              key={to}
-              to={to}
-              text={text}
-            />
-          ))
-        }
+const Header = ({ location }) => {
+  const isActive = destination => location.pathname === destination;
+  return (
+    <div className={styles.headerWrapper}>
+      <div className={styles.header}>
+        <img src={pgsLogo} alt="PGS software logo" />
+        <div className={styles.navigation}>
+          {
+            tabs.map(({ to, text }) => (
+              <Tab
+                key={to}
+                to={to}
+                text={text}
+                isActive={isActive(to)}
+              />
+            ))
+          }
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
+
+Header.propTypes = {
+  location: PropTypes.object.isRequired,
+};
 
 export default withRouter(Header);
