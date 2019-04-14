@@ -1,9 +1,6 @@
 $breakpoints: (
-        'big': '1000px',
-        'medium': '768px',
-        'small': 400px,
+  'medium': 768px,
 ) !default;
-
 
 @mixin on($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {

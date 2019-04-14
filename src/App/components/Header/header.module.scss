@@ -1,23 +1,30 @@
 @import '../../style/variables';
+@import '../../style/breakpoints';
 
 .headerWrapper {
   width: 100%;
   border-bottom: 1px solid lighten($font-color, 50);
   background-color: white;
   .header {
-    margin-left: 15%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
     img {
+      @include on('medium') {
+        margin-left: 15%;
+      }
+      margin-left: 15%;
       margin-top: 50px;
       width: 140px;
     }
     .navigation {
-      margin-top: 25px;
-      max-width: 400px;
-      width: -webkit-fill-available;
+      @include on('medium') {
+        margin-left: 15%;
+        max-width: 400px;
+      }
+      margin: 25px 5% 0 5%;
+      width: 100%;
       justify-content: space-between;
       flex-direction: row;
       display: flex;

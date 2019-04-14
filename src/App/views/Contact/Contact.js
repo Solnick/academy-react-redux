@@ -20,10 +20,8 @@ const Contact = () => {
 
   return (
     <View>
-      <Tile
-        center
-      >
-        <ValidatorForm>
+      <Tile center>
+        <ValidatorForm onSubmit={() => {}}>
           <div className={styles.contactFormWrapper}>
             <TextValidator
               required

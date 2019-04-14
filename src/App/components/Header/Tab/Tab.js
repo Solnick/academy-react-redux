@@ -6,7 +6,9 @@ import styles from './tab.module.scss';
 const Tab = ({ text, to }) => {
   const isActive = destination => window.location.href.endsWith(destination);
   return (
-    <Link to={to} className={`${styles.tab} ${isActive(to) ? styles.activeTab : ''}`}>{text}</Link>
+    <Link to={to} className={`${styles.tab} ${isActive(to) ? styles.activeTab : ''}`}>
+      <p>{text}</p>
+    </Link>
   );
 };
 
