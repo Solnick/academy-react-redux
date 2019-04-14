@@ -1,3 +1,18 @@
-.contact {
+@import '../../style/breakpoints';
 
+.contactFormWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 230px;
+  margin: 50px 45px;
+  @include on("medium") {
+    width: 250px;
+    margin: 50px 120px;
+  }
+  .sendButton {
+    align-self: flex-end;
+    margin-top: 30px;
+    width: 90px;
+  }
 }
