@@ -4,6 +4,7 @@ exports[`Tab component should render correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Tab
+    isActive={true}
     text="about us"
     to="/about-us"
   />,
@@ -24,7 +25,7 @@ ShallowWrapper {
       "children": <p>
         about us
       </p>,
-      "className": "tab ",
+      "className": "tab activeTab",
       "to": "/about-us",
     },
     "ref": null,
@@ -50,7 +51,7 @@ ShallowWrapper {
         "children": <p>
           about us
         </p>,
-        "className": "tab ",
+        "className": "tab activeTab",
         "to": "/about-us",
       },
       "ref": null,

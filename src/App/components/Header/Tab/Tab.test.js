@@ -7,6 +7,7 @@ describe('Tab component', () => {
     const props = {
       to: '/about-us',
       text: 'about us',
+      isActive: true,
     };
     const tabInstance = shallow(<Tab {...props} />);
     expect(tabInstance).toMatchSnapshot();

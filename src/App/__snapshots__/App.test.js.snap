@@ -21,18 +21,28 @@ ShallowWrapper {
       "children": Array [
         <BrowserRouter>
           <withRouter(Header) />
-          <Route
-            component={[Function]}
-            path="/about-us"
-          />
-          <Route
-            component={[Function]}
-            path="/contact"
-          />
-          <Route
-            component={[Function]}
-            path="/ski-cams"
-          />
+          <Switch>
+            <Redirect
+              exact={true}
+              from="/"
+              to="/about-us"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/about-us"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/contact"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/ski-cams"
+            />
+          </Switch>
         </BrowserRouter>,
         <Footer />,
       ],
@@ -47,18 +57,28 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <withRouter(Header) />,
-            <Route
-              component={[Function]}
-              path="/about-us"
-            />,
-            <Route
-              component={[Function]}
-              path="/contact"
-            />,
-            <Route
-              component={[Function]}
-              path="/ski-cams"
-            />,
+            <Switch>
+              <Redirect
+                exact={true}
+                from="/"
+                to="/about-us"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/about-us"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/contact"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/ski-cams"
+              />
+            </Switch>,
           ],
         },
         "ref": null,
@@ -77,35 +97,84 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "component": [Function],
-              "path": "/about-us",
+              "children": Array [
+                <Redirect
+                  exact={true}
+                  from="/"
+                  to="/about-us"
+                />,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/about-us"
+                />,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/contact"
+                />,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/ski-cams"
+                />,
+              ],
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "component": [Function],
-              "path": "/contact",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "component": [Function],
-              "path": "/ski-cams",
-            },
-            "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "exact": true,
+                  "from": "/",
+                  "to": "/about-us",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/about-us",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/contact",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/ski-cams",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
         ],
@@ -132,18 +201,28 @@ ShallowWrapper {
         "children": Array [
           <BrowserRouter>
             <withRouter(Header) />
-            <Route
-              component={[Function]}
-              path="/about-us"
-            />
-            <Route
-              component={[Function]}
-              path="/contact"
-            />
-            <Route
-              component={[Function]}
-              path="/ski-cams"
-            />
+            <Switch>
+              <Redirect
+                exact={true}
+                from="/"
+                to="/about-us"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/about-us"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/contact"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/ski-cams"
+              />
+            </Switch>
           </BrowserRouter>,
           <Footer />,
         ],
@@ -158,18 +237,28 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <withRouter(Header) />,
-              <Route
-                component={[Function]}
-                path="/about-us"
-              />,
-              <Route
-                component={[Function]}
-                path="/contact"
-              />,
-              <Route
-                component={[Function]}
-                path="/ski-cams"
-              />,
+              <Switch>
+                <Redirect
+                  exact={true}
+                  from="/"
+                  to="/about-us"
+                />
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/about-us"
+                />
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/contact"
+                />
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/ski-cams"
+                />
+              </Switch>,
             ],
           },
           "ref": null,
@@ -188,35 +277,84 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "component": [Function],
-                "path": "/about-us",
+                "children": Array [
+                  <Redirect
+                    exact={true}
+                    from="/"
+                    to="/about-us"
+                  />,
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/about-us"
+                  />,
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/contact"
+                  />,
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/ski-cams"
+                  />,
+                ],
               },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "component": [Function],
-                "path": "/contact",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "component": [Function],
-                "path": "/ski-cams",
-              },
-              "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "exact": true,
+                    "from": "/",
+                    "to": "/about-us",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/about-us",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/contact",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/ski-cams",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
               "type": [Function],
             },
           ],
