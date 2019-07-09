@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import styles from './header.module.scss';
 import Tab from './Tab/Tab';
-import pgsLogo from '../../assets/images/pgs-logo.svg';
+import reactLogo from '../../assets/images/react-logo.svg';
 
 const tabs = [
   {
@@ -25,7 +25,7 @@ const Header = ({ location }) => {
   return (
     <div className={styles.headerWrapper}>
       <div className={styles.header}>
-        <img src={pgsLogo} alt="PGS software logo" />
+        <img src={reactLogo} alt="react software logo" />
         <div className={styles.navigation}>
           {
             tabs.map(({ to, text }) => (

@@ -1,0 +1,28 @@
+@import '../../../style/breakpoints';
+
+.contactFormWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 230px;
+  margin: 50px 45px;
+  @include on("medium") {
+    width: 250px;
+    margin: 50px 120px;
+  }
+  .textArea {
+    label {
+      bottom: 30px;
+      top: unset;
+      &[data-shrink=true] {
+        top: 0;
+        bottom: unset;
+      }
+    }
+  }
+  .sendButton {
+    align-self: flex-end;
+    margin-top: 30px;
+    width: 90px;
+  }
+}
