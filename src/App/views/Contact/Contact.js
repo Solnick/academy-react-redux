@@ -1,68 +1,31 @@
-import React, { useState } from 'react';
-import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
-import Button from '@material-ui/core/Button';
-import styles from './contact.module.scss';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import ContactForm from './ContactForm/ContactForm';
+import MessageSentBanner from './MessageSentBanner/MessageSentBanner';
 import View from '../../components/View/View';
 import Tile from '../../components/Tile/Tile';
 
-const validationSchema = {
-  email: {
-    validators: ['isEmail'],
-    errorMessages: ['Email is not valid'],
-  },
+const Contact = ({
+  isAlreadySent,
+}) => (
+  <View>
+    <Tile center>
+      {
+        isAlreadySent
+          ? <MessageSentBanner />
+          : <ContactForm />
+      }
+    </Tile>
+  </View>
+);
+
+Contact.propTypes = {
+  isAlreadySent: PropTypes.bool.isRequired,
 };
 
+const mapStateToProps = state => ({
+  isAlreadySent: state.contact.isAlreadySent,
+});
 
-const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  return (
-    <View>
-      <Tile center>
-        <ValidatorForm onSubmit={() => {}}>
-          <div className={styles.contactFormWrapper}>
-            <TextValidator
-              required
-              variant="standard"
-              name="name"
-              label="Name"
-              value={name}
-              onChange={event => setName(event.target.value)}
-            />
-            <TextValidator
-              required
-              {...validationSchema.email}
-              variant="standard"
-              name="email"
-              label="Email"
-              value={email}
-              onChange={event => setEmail(event.target.value)}
-            />
-            <TextValidator
-              multiline
-              rows={6}
-              variant="standard"
-              name="message"
-              label="Message"
-              value={message}
-              onChange={event => setMessage(event.target.value)}
-              className={styles.textArea}
-            />
-            <Button
-              variant="contained"
-              color="primary"
-              type="submit"
-              className={styles.sendButton}
-            >
-              Send
-            </Button>
-          </div>
-        </ValidatorForm>
-      </Tile>
-    </View>
-  );
-};
-
-export default Contact;
+export default connect(mapStateToProps)(Contact);

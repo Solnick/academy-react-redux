@@ -13,7 +13,7 @@
         "react/jsx-filename-extension": false,
         "max-len": [2, 120, 2],
         "react/forbid-prop-types": false,
-        "import/prefer-default-export": "warn",
+        "import/prefer-default-export": false,
         "no-underscore-dangle": "off",
         "no-confusing-arrow": "off"
     }

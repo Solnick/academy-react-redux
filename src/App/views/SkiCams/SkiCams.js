@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './skiCams.module.scss';
 import getSkiCamsData from '../../api/getSkiCamsData';
-import parseSkiCamsData from '../../utils/parseSkiCamsdata/parseSkiCamsData';
+import parseSkiCamsData from '../../utils/parseSkiCamsData/parseSkiCamsData';
 import SkiResortDetails from './SkiResortDetails/SkiResortDetails';
 import View from '../../components/View/View';
 

@@ -1,0 +1,20 @@
+@import '../../../style/breakpoints';
+
+.bannerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 230px;
+  margin: 50px 45px;
+  @include on("medium") {
+    width: 250px;
+    margin: 50px 120px;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  div {
+    margin-top: 20px;
+  }
+}
