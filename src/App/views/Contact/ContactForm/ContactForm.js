@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 import Button from '@material-ui/core/Button';
 import styles from './contactForm.module.scss';
-import { contactActions } from '../../../store/actions';
+import { contactActions } from '../../../store/actions/index';
 
 
 const validationSchema = {

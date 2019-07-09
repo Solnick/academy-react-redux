@@ -1,4 +1,4 @@
-import { contactActions } from '../actions';
+import { contactActions } from '../actions/index';
 
 const initialState = {
   name: '',

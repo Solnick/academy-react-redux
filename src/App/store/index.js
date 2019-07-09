@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import combinedReducer from './reducers';
+import combinedReducer from './reducers/index';
 
 export function configureStore(initialState) {
   return initialState
