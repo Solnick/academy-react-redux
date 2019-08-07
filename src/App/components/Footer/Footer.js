@@ -4,7 +4,7 @@ import styles from './footer.module.scss';
 const Footer = () => (
   <div className={styles.footerWrapper}>
     <hr />
-    <span>Neoteric Academy</span>
+    <span>Powered by react</span>
   </div>
 );
 
