@@ -5,8 +5,6 @@ import './index.scss';
 import App from './App/App';
 import store from './App/store/index';
 
-window.store = store;
-
 ReactDOM.render(
   <Provider store={store}>
     <App />
